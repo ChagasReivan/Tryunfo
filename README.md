@@ -458,23 +458,23 @@ Crie um formulário que será utilizado para criar as cartas do seu baralho.
 
   * <details><summary>As props do componente <code>Form</code> deverão ser utilizadas conforme o indicado abaixo:</summary>
 
-    * Campo `name-input`: a propriedade `value` deve receber o valor da prop `cardName` e a prop `onChange` deve receber o valor da prop `onInputChange`.
+    * Campo `name-input`: o atributo `value` deve receber o valor da prop `cardName` e o atributo `onChange` deve receber o valor da prop `onInputChange`.
 
-    * Campo `description-input`: a propriedade `value` deve receber o valor da prop `cardDescription` e a prop `onChange` deve receber o valor da prop `onInputChange`.
+    * Campo `description-input`: o atributo `value` deve receber o valor da prop `cardDescription` e o atributo `onChange` deve receber o valor da prop `onInputChange`.
 
-    * Campo `attr1-input`: a propriedade `value` deve receber o valor da prop `cardAttr1` e a prop `onChange` deve receber o valor da prop `onInputChange`.
+    * Campo `attr1-input`: o atributo `value` deve receber o valor da prop `cardAttr1` e o atributo `onChange` deve receber o valor da prop `onInputChange`.
 
-    * Campo `attr2-input`: a propriedade `value` deve receber o valor da prop `cardAttr2` e a prop `onChange` deve receber o valor da prop `onInputChange`.
+    * Campo `attr2-input`: o atributo `value` deve receber o valor da prop `cardAttr2` e o atributo `onChange` deve receber o valor da prop `onInputChange`.
 
-    * Campo `attr3-input`: a propriedade `value` deve receber o valor da prop `cardAttr3` e a prop `onChange` deve receber o valor da prop `onInputChange`.
+    * Campo `attr3-input`: o atributo `value` deve receber o valor da prop `cardAttr3` e o atributo `onChange` deve receber o valor da prop `onInputChange`.
 
-    * Campo `image-input`: a propriedade `value` deve receber o valor da prop `cardImage` e a prop `onChange` deve receber o valor da prop `onInputChange`.
+    * Campo `image-input`: o atributo `value` deve receber o valor da prop `cardImage` e o atributo `onChange` deve receber o valor da prop `onInputChange`.
 
-    * Campo `rare-input`: a propriedade `value` deve receber o valor da prop `cardRare` e a prop `onChange` deve receber o valor da prop `onInputChange`.
+    * Campo `rare-input`: o atributo `value` deve receber o valor da prop `cardRare` e o atributo `onChange` deve receber o valor da prop `onInputChange`.
 
-    * Campo `trunfo-input`: a propriedade `checked` deve receber o valor da prop `cardTrunfo` e a prop `onChange` deve receber o valor da prop `onInputChange`.
+    * Campo `trunfo-input`: o atributo `checked` deve receber o valor da prop `cardTrunfo` e o atributo `onChange` deve receber o valor da prop `onInputChange`.
 
-    * Botão `save-button`: a propriedade `disabled` deve receber o valor da prop `isSaveButtonDisabled` e a prop `onClick` deve receber o valor da prop `onSaveButtonClick`.
+    * Botão `save-button`: o atributo `disabled` deve receber o valor da prop `isSaveButtonDisabled` e o atributo `onClick` deve receber o valor da prop `onSaveButtonClick`.
 
     **:bulb: Obs:** por enquanto a prop `hasTrunfo` ainda não foi utilizada, mas não se preocupe, pois ela será usada em breve.
   </details><br />
