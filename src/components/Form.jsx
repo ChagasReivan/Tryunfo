@@ -13,6 +13,7 @@ class Form extends React.Component {
             type="text"
             data-testid="name-input"
             id="nameId"
+            name="cardName"
             value={ cardName }
             onChange={ onInputChange }
           />
@@ -22,6 +23,7 @@ class Form extends React.Component {
           <textarea
             data-testid="description-input"
             id="descriptionId"
+            name="cardDescription"
             value={ cardDescription }
             onChange={ onInputChange }
           />
@@ -32,6 +34,7 @@ class Form extends React.Component {
             type="number"
             data-testid="attr1-input"
             id="attr1Id"
+            name="cardAttr1"
             value={ cardAttr1 }
             onChange={ onInputChange }
           />
@@ -42,6 +45,7 @@ class Form extends React.Component {
             type="number"
             data-testid="attr2-input"
             id="attr2Id"
+            name="cardAttr2"
             value={ cardAttr2 }
             onChange={ onInputChange }
           />
@@ -52,6 +56,7 @@ class Form extends React.Component {
             type="number"
             data-testid="attr3-input"
             id="attr3Id"
+            name="cardAttr3"
             value={ cardAttr3 }
             onChange={ onInputChange }
           />
@@ -62,6 +67,7 @@ class Form extends React.Component {
             type="text"
             data-testid="image-input"
             id="imageId"
+            name="cardImage"
             value={ cardImage }
             onChange={ onInputChange }
           />
@@ -71,6 +77,7 @@ class Form extends React.Component {
           <select
             data-testid="rare-input"
             id="rareId"
+            name="cardRare"
             value={ cardRare }
             onChange={ onInputChange }
           >
@@ -87,16 +94,17 @@ class Form extends React.Component {
             </option>
           </select>
         </label>
-
-        <label htmlFor="trunfoId">
-          <input
-            type="checkbox"
-            data-testid="trunfo-input"
-            id="trunfoId"
-            checked={ cardTrunfo }
-            onChange={ onInputChange }
-          />
-        </label>
+        {(hasTrunfo) ? <p>Você já tem um Super trunfo em seu baralho</p> : (
+          <label htmlFor="trunfoId">
+            <input
+              type="checkbox"
+              data-testid="trunfo-input"
+              id="trunfoId"
+              name="cardTrunfo"
+              checked={ cardTrunfo }
+              onChange={ onInputChange }
+            />
+          </label>)}
 
         <button
           type="submit"
